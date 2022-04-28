@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: radial-gradient(violet,pink);
+    height: 100vh;
+}
+h1 {
+    text-align: center;
+    font-size: 70px;
+    padding: 50px;
+
+}
+.slajderContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+}
+.slide {
+    height: 500px;
+    width: 100%;
+    border: 5px solid black;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.slide1 {
+    background-image: url(img/index.jpg);
+}
+.slide2 {
+    background-image: url(img/index1.jpg);
+}
+.slide3 {
+    background-image: url(img/index2.jpg);
+}
+.nazad,.napred {
+    position: absolute;
+    top: 50%;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-top: -35px;
+    font-size: 30px;
+}
+.nazad {
+    left: 0;  
+}
+.napred {
+    right: 0;
+}
+.nazad:hover, .napred:hover {
+    background: rgba(0,0,0,.8);
+}
